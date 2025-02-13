@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Desempenho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Análise de Desempenho dos Caminhões Betoneira</h1>
+    <form id="upload-form" enctype="multipart/form-data">
+        <label for="file-input-main">Arquivo Principal:</label>
+        <input type="file" id="file-input-main" name="file_main" accept=".xlsx" required>
+        <label for="file-input-fuel">Arquivo de Valor Combustível:</label>
+        <input type="file" id="file-input-fuel" name="file_fuel" accept=".xlsx" required>
+        <button type="button" id="import-button">Importar</button>
+        <button type="button" id="analyze-button" disabled>Analisar</button>
+        <button type="button" id="litros-base-button" disabled>Litros Base</button>
+        <button type="button" id="custo-base-button" disabled>Custo Base</button>
+        <button type="button" id="shutdown-button">Limpar e Fechar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
